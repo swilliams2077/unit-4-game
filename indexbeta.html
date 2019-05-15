@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Click Knight - Battle of Altered Zero</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class= "container">
+
+        <div class= "row align-items-start">
+            <div class= "col">
+                <!--Records wins and losses. (For personal version of assignment)-->
+                <h2>Wins:<span></span></h2>
+                <h2>Losses:<span></span></h2>
+
+            </div>
+            <div class= "col" id= "titlecenter">
+                <h1>Click Knight:</h1><h3>Battle of Altered Zero</h3>
+            </div>
+            <div class= "col">
+                <!--button that starts reset.css file-->
+                <button type= "button">New Game</button>
+            </div>
+        </div>
+        <!--Character selection.-->
+        <div class= "row align-items-center">
+            <div class= "col" id="fighterimage">
+                <!--image is sent here and enlarged upon character selection-->
+    
+             </div>
+            <div class= "col" style= "text-align: center">
+                    <h5>Select a Character:</h5>
+                <!--Character selection screen images. when these are selected move to position.-->
+                    <input type="image" class="player" id="playerimg1" style="height:50px;width:50px;" src="assets/images/placeholderimg.png" />
+                    <input type="image" class="player" id="playerimg2" style="height:50px;width:50px;" src="assets/images/placeholderimg.png" />
+                    <input type="image" class="player" id="playerimg3" style="height:50px;width:50px;" src="assets/images/placeholderimg.png" />
+                    <input type="image" class="player" id="playerimg4" style="height:50px;width:50px;" src="assets/images/placeholderimg.png" />
+                    <h1>VS</h1>
+
+            </div>
+            <div class= "col">
+                
+    
+            </div>
+        </div>
+
+        <div class="row align-items-end">
+            <div class= "col" style= "text-align: right">
+                <h2>Stats:</h2>
+                <h4>Health:</h4>
+                <h4>Attack 1: 
+                    <input type="image" id="attack1" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png"> 
+                </h4>
+                <h4>Attack 2:
+                    <input type="image" id="attack2" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+                <h4>Special:
+                    <input type="image" id="special" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+                <h4>Defense:
+                    <input type="image" id="defence" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+                
+
+            </div>
+            <div class="col" id = > 
+
+            </div>
+            <div class="col" style="text-align: right">
+                <h2>Stats:</h2>
+                <h4>Health:</h4>
+                <h4>Attack 1: 
+                    <input type="image" id="attack1" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png"> 
+                </h4>
+                <h4>Attack 2:
+                    <input type="image" id="attack2" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+                <h4>Special:
+                    <input type="image" id="special" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+                <h4>Defense:
+                    <input type="image" id="defence" style="height:20px;width:20px;" src="assets/images/specialplaceholderimg.png">
+                </h4>
+
+            </div>
+        </div>
+
+    </div>
+<script>
+    
+    var player1 = {
+        //assigned when selected first.
+        type:" ",
+        health:"100",
+        Attack1:" ",
+        Attack2:" ",
+        special:" ",
+    };
+
+     var player2 = {
+        //assigned when selected first.
+        type:" ",
+        health:"100 ",
+        Attack1:" ",
+        Attack2:" ",
+        special:" ",
+     };
+
+     var player3 = {
+        //assigned when selected first.
+        type:" ",
+        health:"100",
+        Attack1:" ",
+        Attack2:" ",
+        special:" ",
+     };
+
+    var player4 = {
+        //assigned when selected first.
+        type:"100",
+        health:" ",
+        Attack1:" ",
+        Attack2:" ",
+        special:" ",
+    };
+
+    //I would suggest putting these on an object instead of as separate variables
+
+
+    var players = {
+        player1: {
+            //stats
+        },
+        player2: {
+            //stats
+        }
+    }
+
+    players["player1"];
+
+    players["whateveridhere"]
+
+    players[clickedPlayerId];
+
+    //when character is selected, image is sent right above stats. On-click takes (selected image) <input> line and moves it to fighterimage id. Second click decides
+    //what enemy you face off against. moves that enemy to the other side. prompt to begin fight begins.
+// $("#playerimg1").click(function (){
+//     $("#playerimg1").css("height:200px","width:200px");
+//     $("#playerimg1").insertAfter($("#fighterimage"));
+//     ; 
+//     console.log("This works");
+// });
+
+// $("#playerimg2").click(function (){
+//     $("#playerimg2").css("height:200px","width:200px");
+//     $("#playerimg2").insertAfter($("#fighterimage"));
+//     ; 
+//     console.log("This works");
+// });
+
+
+// $("#playerimg3").click(function (){
+//     $("#playerimg3").css("height:200px","width:200px");
+//     $("#playerimg3").insertAfter($("#fighterimage"));
+//     ; 
+//     console.log("This works");
+// });
+
+// $("#playerimg4").click(function (){
+//     $("#playerimg4").css("height:200px","width:200px");
+//     $("#playerimg4").insertAfter($("#fighterimage"));
+//     ; 
+//     console.log("This works");
+// });
+var goodGuy;
+var badGuy;
+
+$(".player").click(function() {
+    var clickedThing = $(this);
+    var currentPlayerId = $(this).attr("id");
+    var clickedPlayer = $("#" + currentPlayerId); // maybe look up the player object in javascript nad save it it as good guy or bad guy instead of saving the HTML
+    var goodGuyArea = $("#fighterimage");
+    var badGuyArea = $("#fighterimage");
+
+    if (!goodGuy) {
+        goodGuy = clickedPlayer;
+        clickedPlayer.appendTo(goodGuyArea);
+    } else if (!badGuy) {
+        badGuy = clickedPlayer;
+        clickedPlayer.appendTo(badGuyArea);
+
+        //how can I take some attribute from the 'this' to ultimately match it to one of my player objects, now I have their hp and their attacks and I can manage them and update stats
+
+    }
+    // $("#playerimg4").css("height:200px","width:200px");
+    // $("#playerimg4").insertAfter($("#fighterimage"));
+
+});
+
+$(".attack-button").click(function() {
+    if (goodGuy && badGuy) {
+        console.log('lets fight');
+        // do fight stuff 
+    } else {
+        console.log('please pick your character');
+    }
+})
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
